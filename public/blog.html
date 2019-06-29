@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <h3 style="text-align: center">Create new post</h3>
+    <form
+      name="form"
+      class="md-form col-md-6"
+      style="margin:20px auto"
+      method="POST"
+      action="/blogpost"
+    >
+      <div class="form-group">
+        <label for="file">Upload your File</label>
+        <input type="file" name="file" id="file" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="text">Title</label>
+        <input type="text" name="title" id="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <input type="text" name="topic" id="topic" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="body">Article</label>
+        <textarea
+          name="article"
+          id="body"
+          rows="6"
+          class="form-control"
+        ></textarea>
+      </div>
+      <button class="btn btn-dark" type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <script src="./js/clientAPI's.js"></script>
+    <script src="./js/SomeAmountofhtml.js"></script>
+  </body>
+</html>
